@@ -1,6 +1,6 @@
 <?php
 
-namespace VIACreative\SudoSu;
+namespace Herjew\SudoSu;
 
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;

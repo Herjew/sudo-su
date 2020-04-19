@@ -1,11 +1,11 @@
 <?php
 
-namespace VIACreative\SudoSu\Controllers;
+namespace Herjew\SudoSu\Controllers;
 
 use App\Models\BackendAdmin;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-use VIACreative\SudoSu\SudoSu;
+use Herjew\SudoSu\SudoSu;
 use Illuminate\Routing\Controller;
 
 class SudoSuController extends Controller
