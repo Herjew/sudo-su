@@ -37,7 +37,7 @@ class SudoSu
         $this->session->put('sudosu.has_sudoed', true);
         $this->session->put($this->sessionKey, $originalUserId);
 
-        $this->auth->loginUsingId($userId);
+        return $this->auth->loginUsingId($userId);
     }
 
     /**

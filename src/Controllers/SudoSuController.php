@@ -20,7 +20,9 @@ class SudoSuController extends Controller
     public function loginAsUser(Request $request)
     {
         $admin = $this->sudoSu->loginAsUser($request->userId, $request->originalUserId);
-        $this->authenticated($request, $admin);
+        if($admin instanceof BackendAdmin){
+            $this->authenticated($request, $admin);
+        }
 
         return redirect()->back();
     }
